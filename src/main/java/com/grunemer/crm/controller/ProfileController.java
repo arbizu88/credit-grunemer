@@ -1,6 +1,6 @@
 package com.grunemer.crm.controller;
 
-import com.grunemer.crm.dto.Profile;
+import com.grunemer.crm.entity.Profile;
 import com.grunemer.crm.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
