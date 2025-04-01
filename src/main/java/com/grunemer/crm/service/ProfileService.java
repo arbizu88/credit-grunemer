@@ -1,6 +1,6 @@
 package com.grunemer.crm.service;
 
-import com.grunemer.crm.dto.Profile;
+import com.grunemer.crm.entity.Profile;
 import com.grunemer.crm.repository.ProfileRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
