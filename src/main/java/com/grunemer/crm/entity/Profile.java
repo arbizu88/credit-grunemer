@@ -1,4 +1,4 @@
-package com.grunemer.crm.dto;
+package com.grunemer.crm.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +15,8 @@ public class Profile {
     private String name;
     private String lastName;
     private String identification;
+    private String email;
+    private String phone;
     private String photo;
     private String age;
 
