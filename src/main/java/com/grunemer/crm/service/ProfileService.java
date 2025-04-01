@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,7 +26,10 @@ public class ProfileService {
     }
 
     public List<Profile> findAll() {
-        return profileRepository.findAll();
+        return profileRepository.findAll()
+                .stream()
+                .sorted(Comparator.comparing(Profile::getId))
+                .toList();
     }
 
     public Optional<Profile> findById(Long id) {
